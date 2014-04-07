@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block title %}Accra In One: Welcome{% endblock %}
+
+{% block ad_space %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"> </div>
+        <div class="col-md-10 ad_space_top">ad here</div>
+        <div class="col-md-1"> </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block side_ad_space %}
+
+<div class="side_ad_space">
+ad here
+</div>
+
+{% endblock %}
+
+
+
+{% block carousel %}
+        <!-- Carousel================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide"
+                                       alt="First slide"
+                                       src="static/custom/images/image_1.jpg">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>Example headline.</h1>
+                                      <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide"
+                                       alt="Second slide"
+                                       src="static/custom/images/image_2.jpg">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>Another example headline.</h1>
+                                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide"
+                                       alt="Third slide"
+                                       src="static/custom/images/image_3.jpg"   >
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>One more for good measure.</h1>
+                                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                              <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div><!-- /.carousel -->
+{% endblock %}
+
+
+{% block social_site_trending %}
+
+<div id="content">
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#facebook" data-toggle="tab">Facebook</a></li>
+        <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
+        <li><a href="#pinterest" data-toggle="tab">Pinterest</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="facebook">
+            <h1>What's happening right now</h1>
+            <p>feeds from facebook</p>
+        </div>
+        <div class="tab-pane" id="twitter">
+            <h1>Tweets</h1>
+            <p>Tweets with the tag #accrain1 or #accrainone</p>
+        </div>
+        <div class="tab-pane" id="pinterest">
+            <h1>Pinterest</h1>
+            <p>Pixs shared right now</p>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>
+</div> <!-- container -->
+
+{% endblock %}

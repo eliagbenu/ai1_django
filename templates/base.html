@@ -1,0 +1,250 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>{% block title %} Accra In One{% endblock %}</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="{{STATIC_URL }}bootstrap/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="{{STATIC_URL }}bootstrap/css/bootstrap-theme.min.css">
+
+        <script src="{{STATIC_URL }}custom/js/jquery.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="{{STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+
+        <link href="{{STATIC_URL }}custom/css/carousel.css" rel="stylesheet">
+
+        <link href="{{STATIC_URL }}custom/css/navbar-fixed-top.css" rel="stylesheet">
+
+
+        <!-- customized css-->
+        <link href="{{STATIC_URL }}custom/css/style.css" rel="stylesheet">
+
+        <link href="{{STATIC_URL }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="row site_banner">
+            <div class="col-md-4">
+                Accra In One
+            </div>
+            <div class="col-md-8">
+                for everything Accra
+            </div>
+        </div>
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="{% static 'custom/images/logo.png' %}" ></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Auto <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Finance <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Food <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tech <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Travel <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shopping <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    {% block ad_space %} ad space here {% endblock %}
+
+    <div class="row">
+        <div class="col-md-2">
+
+    {% block side_ad_space %} ad space here {% endblock %}
+
+        </div>
+        <div class="col-md-6">
+                {% block carousel %} carosel comes here {% endblock %}
+        </div>
+        <div class="col-md-4">
+            {% block social_site_trending %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+
+    {% block footer %}
+    <div class="footer">
+       <div class="row">
+           <div class="col-md-2">
+               <table class="table">
+               <tr><th> About This site  </th></tr>
+               <tr><td> <a href="#">About this Website</a>  </td></tr>
+               <tr><td> <a href="#">Report a Tech Issue With This Site</a>  </td></tr>
+               <tr><td> <a href="#">Minnesota Encyclopedia</a>  </td></tr>
+               <tr><td> <a href="#">State Symbols</a>  </td></tr>
+               </table>
+           </div>
+
+           <div class="col-md-2">
+               <table class="table">
+               <tr><th>Citizen Resources</th></tr>
+               <tr><td> <a href="#">Capitol Area Maps</a>  </td></tr>
+               <tr><td> <a href="#">Courts</a>  </td></tr>
+               <tr><td> <a href="#">State Government Directory</a>  </td></tr>
+               <tr><td> <a href="#">State Social Media</a>  </td></tr>
+               </table>
+           </div>
+
+           <div class="col-md-2">
+               <table class="table">
+               <tr><th>Business Resources</th></tr>
+               <tr><td> <a href="#">Banks</a>  </td></tr>
+               <tr><td> <a href="#">Micro Finance</a>  </td></tr>
+               <tr><td> <a href="#">Jobs</a>  </td></tr>
+               </table>
+           </div>
+
+           <div class="col-md-2">
+               <table class="table">
+               <tr><th>Tourism Resources</th></tr>
+               <tr><td> <a href="#">Hotels</a>  </td></tr>
+               <tr><td> <a href="#">Restaurants</a>  </td></tr>
+               <tr><td> <a href="#">Clubs</a>  </td></tr>
+               </table>
+           </div>
+
+           <div class="col-md-2">
+               <table class="table">
+               <tr><th>Utility Providers</th></tr>
+               <tr><td> <a href="#">Water</a>  </td></tr>
+               <tr><td> <a href="#">Electricity</a>  </td></tr>
+               <tr><td> <a href="#">Sanitation</a>  </td></tr>
+               </table>
+           </div>
+
+           <div class="col-md-2">
+               <table class="table">
+               <tr><th>Advertise</th></tr>
+               <tr><td> <a href="#">Place an ad</a>  </td></tr>
+               </table>
+           </div>
+
+       </div>
+
+        <div class="row custom_text">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                Connect with Accra In One
+            </div>
+             <div class="col-md-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <i class="fa fa-twitter-square fa-5x"></i>
+            </div>
+             <div class="col-md-3">
+                <i class="fa fa-facebook-square fa-5x"></i>
+            </div>
+             <div class="col-md-3">
+                <i class="fa fa-pinterest-square fa-5x"></i>
+            </div>
+             <div class="col-md-3">
+                <i class="fa fa-youtube-square fa-5x"></i>
+            </div>
+        </div>
+
+    </div>
+    {% endblock %}
+
+    </body>
+</html>

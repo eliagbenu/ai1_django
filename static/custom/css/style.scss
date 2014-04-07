@@ -1,0 +1,109 @@
+$color_1: #038643;
+$color_2:#fff;
+$color_3:#000;
+$color_4:red;
+
+$top_banner_text:"dragon_is_coming";
+
+
+body{
+  background: url('../images/pw_maze_white.png');
+  a{
+    color:$color_4;
+  }
+}
+
+.navbar{
+background: $color_3;
+}
+
+.navbar-default{
+background: $color_2;
+}
+
+.ad_space_top{
+  background: $color_3;
+  width:728px;
+  height:90px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.side_ad_space{
+  background: $color_3;
+  width:200px;
+  height:250px;
+}
+
+@font-face
+{
+font-family: $top_banner_text;
+src: url(Silent_Reaction.ttf);
+}
+
+.custom_text{
+  font-family:$top_banner_text;
+  font-size:30px;
+  color:$color_2;
+}
+
+.site_banner{
+  font-family:$top_banner_text;
+  font-size:30px;
+  color:$color_4;
+  background: $color_3;
+}
+
+.footer{
+background:$color_1;
+border-top:5px $color_3 solid;
+text-align: center;
+margin-bottom:-40px;
+  h1{
+    font-size:18px;
+    text-decoration: underline;
+    color:$color_2;
+  }
+  table tr td{
+    font-size:11px;
+  }
+  table tr th{
+    font-family:$top_banner_text;
+    color:$color_2;
+  }
+  i{
+    color:$color_2;
+  }
+  a{
+    color:$color_2;
+  }
+}
+
+.bs-sidebar .nav > .active > ul {
+  display: block;
+  margin-bottom: 8px;
+  background: $color_2;
+}
+
+.menu_area{
+  background: $color_2;
+  position:absolute;
+}
+
+#facebook,#twitter,#pinterest{
+background: $color_2;
+}
+
+//some more below
+.main_content_area{
+  background: $color_1;
+  margin:2px 10px 10px 10px;
+}
+
+.content_area{
+  background: $color_2;
+  margin:10px 5px;
+  height: 500px;
+}
+
+

@@ -1,0 +1,77 @@
+body {
+  background: url("../images/pw_maze_white.png"); }
+  body a {
+    color: red; }
+
+.navbar {
+  background: black; }
+
+.navbar-default {
+  background: white; }
+
+.ad_space_top {
+  background: black;
+  width: 728px;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+.side_ad_space {
+  background: black;
+  width: 200px;
+  height: 250px; }
+
+@font-face {
+  font-family: "dragon_is_coming";
+  src: url(Silent_Reaction.ttf); }
+
+.custom_text {
+  font-family: "dragon_is_coming";
+  font-size: 30px;
+  color: white; }
+
+.site_banner {
+  font-family: "dragon_is_coming";
+  font-size: 30px;
+  color: red;
+  background: black; }
+
+.footer {
+  background: #038643;
+  border-top: 5px black solid;
+  text-align: center;
+  margin-bottom: -40px; }
+  .footer h1 {
+    font-size: 18px;
+    text-decoration: underline;
+    color: white; }
+  .footer table tr td {
+    font-size: 11px; }
+  .footer table tr th {
+    font-family: "dragon_is_coming";
+    color: white; }
+  .footer i {
+    color: white; }
+  .footer a {
+    color: white; }
+
+.bs-sidebar .nav > .active > ul {
+  display: block;
+  margin-bottom: 8px;
+  background: white; }
+
+.menu_area {
+  background: white;
+  position: absolute; }
+
+#facebook, #twitter, #pinterest {
+  background: white; }
+
+.main_content_area {
+  background: #038643;
+  margin: 2px 10px 10px 10px; }
+
+.content_area {
+  background: white;
+  margin: 10px 5px;
+  height: 500px; }
