@@ -23,11 +23,16 @@
         <link href="{{STATIC_URL }}custom/css/style.css" rel="stylesheet">
 
         <link href="{{STATIC_URL }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="{{STATIC_URL }}custom/images/favicon.ico" type="image/x-icon">
+
+        <link rel="icon" href="{{STATIC_URL }}custom/images/favicon.ico" type="image/x-icon">
+
     </head>
     <body>
 
     <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
 
         <div class="row site_banner">
@@ -46,93 +51,72 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="{% static 'custom/images/logo.png' %}" ></a>
+
+          <a class="navbar-brand" href="/">
+              <img src="{% static 'custom/images/logo.jpg' %}" >
+          </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Auto <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+
+
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Finance <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="/finance/banks/">Banks</a></li>
+                <li><a href="/finance/micro_finance/">Micro finance firms</a></li>
+                <li><a href="/finance/savings_n_loans/">Savings & loans</a></li>
               </ul>
             </li>
+
             <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Auto <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">New Cars</a></li>
+                <li><a href="#">Used Cars</a></li>
+                <li><a href="#">Spare parts</a></li>
+              </ul>
+            </li>
+
+              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Food <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Chop bar</a></li>
               </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tech <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Telcos</a></li>
+                <li><a href="#">Content Providers</a></li>
               </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Travel <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Health <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Traditional</a></li>
+                <li><a href="#">Pharmarcy</a></li>
+                <li><a href="#">Chemist</a></li>
+                <li><a href="#">Hospital</a></li>
               </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shopping <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Education <b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Varisty/ Colleges</a></li>
+                <li><a href="#">Polytechnic</a></li>
+                <li><a href="#">Vocational</a></li>
+                <li><a href="#">High School</a></li>
               </ul>
             </li>
               <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Night Clubs</a></li>
+                <li><a href="#">Legal services</a></li>
               </ul>
             </li>
           </ul>
@@ -150,7 +134,14 @@
 
         </div>
         <div class="col-md-6">
-                {% block carousel %} carosel comes here {% endblock %}
+                {% block carousel %}
+
+                 {% endblock %}
+
+                {% block content_area %}
+
+                 {% endblock %}
+
         </div>
         <div class="col-md-4">
             {% block social_site_trending %}
@@ -245,6 +236,7 @@
 
     </div>
     {% endblock %}
+
 
     </body>
 </html>
