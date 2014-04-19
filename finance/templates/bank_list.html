@@ -27,20 +27,28 @@ ad here
 
 {% block content_area %}
 
-<table>
-    <tr>
-        <th>Name</th>
+{% for bank in all_banks %}
+    {# Each "bank" is a Bank model object. #}
+    <a href="{{ bank.website_address}}" target="_blank">{{ bank.bank_name|upper }}</a> <br />
 
-        <th>web address</th>
-    </tr>
-    {% for bank in all_banks %}
-    <tr>
-        <td>{{ bank.bank_name }}</td>
 
-        <td>{{ bank.website_address }}</td>
-    </tr>
-    {% endfor %}
-</table>
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if all_banks.has_previous %}
+            <a href="?page={{ all_banks.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ all_banks.number }} of {{ all_banks.paginator.num_pages }}.
+        </span>
+
+        {% if all_banks.has_next %}
+            <a href="?page={{ all_banks.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
 
 
 {% endblock %}

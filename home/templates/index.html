@@ -38,7 +38,7 @@ ad here
                                 <div class="item active">
                                   <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide"
                                        alt="First slide"
-                                       src="static/custom/images/image_1.jpg">
+                                       src="http://accrainone.s3.amazonaws.com/images/image_1.jpg" >
                                   <div class="container">
                                     <div class="carousel-caption">
                                       <h1>Example headline.</h1>
@@ -51,7 +51,7 @@ ad here
                                 <div class="item">
                                   <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide"
                                        alt="Second slide"
-                                       src="static/custom/images/image_2.jpg">
+                                       src="http://accrainone.s3.amazonaws.com/images/image_2.jpg" >
                                   <div class="container">
                                     <div class="carousel-caption">
                                       <h1>Another example headline.</h1>
@@ -63,7 +63,7 @@ ad here
                                 <div class="item">
                                   <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide"
                                        alt="Third slide"
-                                       src="static/custom/images/image_3.jpg"   >
+                                       src="http://accrainone.s3.amazonaws.com/images/image_3.jpg"   >
                                   <div class="container">
                                     <div class="carousel-caption">
                                       <h1>One more for good measure.</h1>
@@ -81,34 +81,41 @@ ad here
 
 {% block social_site_trending %}
 
+<div class="white_background">
+
 <div id="content">
     <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-        <li class="active"><a href="#facebook" data-toggle="tab">Facebook</a></li>
-        <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
-        <li><a href="#pinterest" data-toggle="tab">Pinterest</a></li>
+        <li class="active"><a href="#facebook" data-toggle="tab">
+            <i class="fa fa-facebook-square fa-3x"></i>
+            </a></li>
+        <li><a href="#twitter" data-toggle="tab">
+            <i class="fa fa-twitter-square fa-3x"></i>
+        </a></li>
     </ul>
     <div id="my-tab-content" class="tab-content">
         <div class="tab-pane active" id="facebook">
-            <h1>What's happening right now</h1>
-            <p>feeds from facebook</p>
+
+        <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-post" data-href="https://www.facebook.com/anthony.eli.agbenu/posts/10202943490042691" data-width="150"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/anthony.eli.agbenu/posts/10202943490042691">Post</a> by <a href="https://www.facebook.com/anthony.eli.agbenu">Anthony Eli Agbenu</a>.</div></div>
+
         </div>
+
         <div class="tab-pane" id="twitter">
-            <h1>Tweets</h1>
-            <p>Tweets with the tag #accrain1 or #accrainone</p>
-        </div>
-        <div class="tab-pane" id="pinterest">
-            <h1>Pinterest</h1>
-            <p>Pixs shared right now</p>
+            <p>
+                <blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/search?q=%23accrainone&amp;src=hash">#accrainone</a> is for everything Accra. Cheers!!!</p>&mdash; Anthony Eli Agbenu (@eli_agbenu) <a href="https://twitter.com/eli_agbenu/statuses/456711501517045760">April 17, 2014</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
         </div>
     </div>
 </div>
 
+</div>
 
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         $('#tabs').tab();
     });
 </script>
-</div> <!-- container -->
+
 
 {% endblock %}

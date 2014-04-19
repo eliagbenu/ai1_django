@@ -67,6 +67,9 @@ body {
 #facebook, #twitter, #pinterest {
   background: white; }
 
+.white_background {
+  background: white; }
+
 .main_content_area {
   background: #038643;
   margin: 2px 10px 10px 10px; }
