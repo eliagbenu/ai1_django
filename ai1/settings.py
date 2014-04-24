@@ -57,6 +57,7 @@ LOCAL_APPS = (
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
+
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_S3_SECURE_URLS = False       # use http instead of https
 AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
@@ -133,9 +134,10 @@ TEMPLATE_DIRS=(
 
 
 #below:for heroku
-
+"""
 import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+"""
