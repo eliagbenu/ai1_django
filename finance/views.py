@@ -10,6 +10,12 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def index(request):
     return render(request,'finance.html')
 
+def micro_finance(request):
+    return render(request,'finance.html')
+
+def savings_n_loans(request):
+    return render(request,'finance.html')
+
 def banks(request):
     bank_list = Bank.objects.all()
     paginator = Paginator(bank_list, 2)

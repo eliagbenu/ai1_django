@@ -12,6 +12,14 @@ urlpatterns = patterns('',
     url(r'^$', 'home.views.homePage', name='index'),
 
     url(r'^finance/', include('finance.urls')),
+
+    url(r'^food/', include('food.urls')),
+
+    url(r'^education/', include('education.urls')),
+
+    url(r'^health/', include('health.urls')),
+
+    url(r'^tech/', include('tech.urls')),
 )
 
 

@@ -10,6 +10,10 @@ urlpatterns = patterns('',
 
     url(r'banks', views.banks),
 
+    url(r'micro_finance', views.micro_finance),
+
+    url(r'savings_n_loans', views.savings_n_loans),
+
 #    url(r'^banks', BankListView.as_view()),
 
 #    url(r'$', views.index),

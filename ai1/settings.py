@@ -25,25 +25,45 @@ SECRET_KEY = '0l8)i@pg7s5ds#mfwhm+6yxcmj!!u3v&e%u6jp)(qnd96(=6xh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
 
-INSTALLED_APPS = (
+DJANGO_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'twitter_bootstrap',
-    "home",
-    'finance',
 )
+
+THIRD_PARTY_APPS =(
+    'twitter_bootstrap',
+    'storages',
+)
+
+LOCAL_APPS = (
+    'home',
+    'finance',
+    'food',
+    'education',
+    'health',
+    'tech'
+)
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+AWS_S3_SECURE_URLS = False       # use http instead of https
+AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
+AWS_S3_ACCESS_KEY_ID = 'AKIAI3JYZPX6PGAACGDA'     # enter your access key id
+AWS_S3_SECRET_ACCESS_KEY = 'UDOBnLV95aVsPysqnFTpdapSYl5OXzXIxivRsjkm' # enter your secret access key
+AWS_STORAGE_BUCKET_NAME = '/accrainone/images/'
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -99,10 +119,15 @@ STATICFILES_DIRS = (
     BASE_DIR+'/static/home'
 )
 
+
 TEMPLATE_DIRS=(
     'templates/',
     'templates/home/',
     'templates/finance/',
+    'templates/food/',
+    'templates/education/',
+    'templates/health/',
+    'templates/tech/',
 )
 
 
