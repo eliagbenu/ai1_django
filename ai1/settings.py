@@ -43,7 +43,7 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS =(
     'twitter_bootstrap',
-    'storages',
+    #'storages',
 )
 
 LOCAL_APPS = (
