@@ -61,8 +61,8 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_S3_SECURE_URLS = False       # use http instead of https
 AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
-AWS_S3_ACCESS_KEY_ID = 'AKIAI3JYZPX6PGAACGDA'     # enter your access key id
-AWS_S3_SECRET_ACCESS_KEY = 'UDOBnLV95aVsPysqnFTpdapSYl5OXzXIxivRsjkm' # enter your secret access key
+AWS_S3_ACCESS_KEY_ID = 'key is picked from .env'     # enter your access key id
+AWS_S3_SECRET_ACCESS_KEY = 'key is picked from .env' # enter your secret access key
 AWS_STORAGE_BUCKET_NAME = '/accrainone/images/'
 
 
